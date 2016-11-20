@@ -21,5 +21,10 @@ class ViewController: UIViewController {
     super.viewWillLayoutSubviews()
     
   }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+  }
 }
 
