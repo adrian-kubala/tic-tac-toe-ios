@@ -12,12 +12,14 @@ class ViewController: UIViewController {
   let number = 7;
   let message = "Hello"
   
-  
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
   }
   
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    
+  }
 }
 
