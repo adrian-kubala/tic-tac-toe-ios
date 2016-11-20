@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  let number = 7;
+  let message = "Hello"
+  
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
   }
+  
 }
 
