@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="width" constant="264" id="UTp-Gt-hgd"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVc-Q0-RbY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVc-Q0-RbY">
                                 <rect key="frame" x="55" y="291" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="2Jn-Y4-hcp"/>
@@ -36,7 +36,7 @@
                                 </constraints>
                                 <state key="normal" image="circle-sign"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIJ-0E-aRK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIJ-0E-aRK">
                                 <rect key="frame" x="141" y="291" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="df4-5k-acP"/>
@@ -44,7 +44,7 @@
                                 </constraints>
                                 <state key="normal" image="circle-sign"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK8-KE-EqD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK8-KE-EqD">
                                 <rect key="frame" x="141" y="207" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="G0u-kM-TXM"/>
@@ -52,7 +52,7 @@
                                 </constraints>
                                 <state key="normal" image="circle-sign"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJv-yr-6Jf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJv-yr-6Jf">
                                 <rect key="frame" x="55" y="377" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="PjR-p4-ouk"/>
@@ -60,7 +60,7 @@
                                 </constraints>
                                 <state key="normal" image="circle-sign"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFW-9s-8ru">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFW-9s-8ru">
                                 <rect key="frame" x="141" y="377" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="blb-by-izI"/>
@@ -68,15 +68,7 @@
                                 </constraints>
                                 <state key="normal" image="circle-sign"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7f-q5-0Ga">
-                                <rect key="frame" x="229" y="377" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="1tC-PT-NCa"/>
-                                    <constraint firstAttribute="width" constant="84" id="fg8-OZ-P1i"/>
-                                </constraints>
-                                <state key="normal" image="circle-sign"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4V-xa-p33">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4V-xa-p33">
                                 <rect key="frame" x="229" y="291" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="86C-JH-Lpx"/>
@@ -84,7 +76,7 @@
                                 </constraints>
                                 <state key="normal" image="circle-sign"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxw-e0-4xn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxw-e0-4xn">
                                 <rect key="frame" x="229" y="207" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="NWh-fK-iIB"/>
@@ -100,13 +92,37 @@
                                 </constraints>
                                 <state key="normal" image="circle-sign"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7f-q5-0Ga">
+                                <rect key="frame" x="229" y="377" width="84" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="1tC-PT-NCa"/>
+                                    <constraint firstAttribute="width" constant="84" id="fg8-OZ-P1i"/>
+                                </constraints>
+                                <state key="normal" image="circle-sign"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="b2F-Nh-5dd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8U4-ME-ybQ"/>
+                            <constraint firstItem="uK8-KE-EqD" firstAttribute="leading" secondItem="ohg-cY-OK6" secondAttribute="trailing" constant="2" id="BKR-1d-fgO"/>
+                            <constraint firstItem="dVc-Q0-RbY" firstAttribute="top" secondItem="ohg-cY-OK6" secondAttribute="bottom" id="BwL-4y-Dvq"/>
+                            <constraint firstItem="Gxw-e0-4xn" firstAttribute="leading" secondItem="uK8-KE-EqD" secondAttribute="trailing" constant="4" id="OAZ-5b-wS4"/>
+                            <constraint firstItem="cIJ-0E-aRK" firstAttribute="top" secondItem="dVc-Q0-RbY" secondAttribute="top" id="OUf-sj-zaF"/>
+                            <constraint firstItem="C4V-xa-p33" firstAttribute="top" secondItem="cIJ-0E-aRK" secondAttribute="top" id="R7j-Rw-dGp"/>
+                            <constraint firstItem="Gxw-e0-4xn" firstAttribute="top" secondItem="uK8-KE-EqD" secondAttribute="top" id="RvS-xg-HNh"/>
+                            <constraint firstItem="uK8-KE-EqD" firstAttribute="top" secondItem="ohg-cY-OK6" secondAttribute="top" id="S9o-9f-zBA"/>
                             <constraint firstItem="b2F-Nh-5dd" firstAttribute="leading" secondItem="ohg-cY-OK6" secondAttribute="trailing" constant="-84" id="VKH-wv-RPL"/>
                             <constraint firstItem="b2F-Nh-5dd" firstAttribute="top" secondItem="ohg-cY-OK6" secondAttribute="bottom" constant="-90" id="W7g-4c-eb8"/>
                             <constraint firstItem="b2F-Nh-5dd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WsL-NJ-V7R"/>
+                            <constraint firstItem="aJv-yr-6Jf" firstAttribute="leading" secondItem="dVc-Q0-RbY" secondAttribute="leading" id="Zy7-8I-wHF"/>
+                            <constraint firstItem="EFW-9s-8ru" firstAttribute="bottom" secondItem="aJv-yr-6Jf" secondAttribute="bottom" id="bSG-gn-tuT"/>
+                            <constraint firstItem="H7f-q5-0Ga" firstAttribute="bottom" secondItem="EFW-9s-8ru" secondAttribute="bottom" id="cqg-XN-3go"/>
+                            <constraint firstItem="H7f-q5-0Ga" firstAttribute="leading" secondItem="EFW-9s-8ru" secondAttribute="trailing" constant="4" id="dLZ-o7-wCb"/>
+                            <constraint firstItem="cIJ-0E-aRK" firstAttribute="leading" secondItem="dVc-Q0-RbY" secondAttribute="trailing" constant="2" id="eoh-h0-EqX"/>
+                            <constraint firstItem="dVc-Q0-RbY" firstAttribute="leading" secondItem="ohg-cY-OK6" secondAttribute="leading" id="fuE-uk-7Vs"/>
+                            <constraint firstItem="EFW-9s-8ru" firstAttribute="leading" secondItem="aJv-yr-6Jf" secondAttribute="trailing" constant="2" id="lmp-D9-lgn"/>
+                            <constraint firstItem="C4V-xa-p33" firstAttribute="leading" secondItem="cIJ-0E-aRK" secondAttribute="trailing" constant="4" id="oPD-lR-fdA"/>
+                            <constraint firstItem="aJv-yr-6Jf" firstAttribute="top" secondItem="dVc-Q0-RbY" secondAttribute="bottom" constant="2" id="xWm-wL-gEx"/>
                         </constraints>
                     </view>
                 </viewController>
