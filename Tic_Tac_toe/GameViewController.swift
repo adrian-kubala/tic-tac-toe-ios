@@ -9,22 +9,31 @@
 import UIKit
 
 class GameViewController: UIViewController {
-  let number = 7;
-  let message = "Hello"
+  @IBOutlet weak var circleTextField: UITextField!
+  @IBOutlet weak var crossTextField: UITextField!
+  
+  let grid = Grid()
+  var isCircleTurn = true
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-  }
-  
-  override func viewWillLayoutSubviews() {
-    super.viewWillLayoutSubviews()
     
   }
   
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
+  @IBAction func makeMove(_ sender: FieldView) {
+    if sender.isClicked {
+      return
+    }
     
+    if isCircleTurn {
+      sender.setImage(#imageLiteral(resourceName: "circle-sign"), for: .normal)
+    } else {
+      sender.setImage(UIImage(named: "ex-sign"), for: .normal)
+    }
+    
+    sender.isClicked = !sender.isClicked
+    isCircleTurn = !isCircleTurn
   }
 }
-
