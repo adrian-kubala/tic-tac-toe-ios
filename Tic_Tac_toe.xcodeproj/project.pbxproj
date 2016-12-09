@@ -10,6 +10,7 @@
 		3A01D2261DFB411A0010740F /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01D2251DFB411A0010740F /* Field.swift */; };
 		3A01D2281DFB42300010740F /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01D2271DFB42300010740F /* Grid.swift */; };
 		3A01D22A1DFB43D50010740F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01D2291DFB43D50010740F /* Player.swift */; };
+		3A01D2311DFB47DF0010740F /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01D2301DFB47DF0010740F /* FieldView.swift */; };
 		3A0368721DE8751000FADF33 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0368711DE8751000FADF33 /* MainMenuViewController.swift */; };
 		3ACB6E3A1DE0E4F1005FB30F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6E391DE0E4F1005FB30F /* AppDelegate.swift */; };
 		3ACB6E3C1DE0E4F1005FB30F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6E3B1DE0E4F1005FB30F /* GameViewController.swift */; };
@@ -22,6 +23,7 @@
 		3A01D2251DFB411A0010740F /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		3A01D2271DFB42300010740F /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		3A01D2291DFB43D50010740F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3A01D2301DFB47DF0010740F /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 		3A0368711DE8751000FADF33 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		3ACB6E361DE0E4F1005FB30F /* Tic_Tac_toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tic_Tac_toe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACB6E391DE0E4F1005FB30F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 				3A01D2291DFB43D50010740F /* Player.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		3A01D2321DFB49230010740F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A01D2301DFB47DF0010740F /* FieldView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		3A0368731DE8753100FADF33 /* ViewController */ = {
@@ -83,6 +93,7 @@
 			children = (
 				3ACB6E391DE0E4F1005FB30F /* AppDelegate.swift */,
 				3A01D22D1DFB468B0010740F /* Model */,
+				3A01D2321DFB49230010740F /* View */,
 				3A0368731DE8753100FADF33 /* ViewController */,
 				3ACB6E3D1DE0E4F1005FB30F /* Main.storyboard */,
 				3ACB6E401DE0E4F1005FB30F /* Assets.xcassets */,
@@ -170,6 +181,7 @@
 				3A01D2281DFB42300010740F /* Grid.swift in Sources */,
 				3A01D22A1DFB43D50010740F /* Player.swift in Sources */,
 				3ACB6E3A1DE0E4F1005FB30F /* AppDelegate.swift in Sources */,
+				3A01D2311DFB47DF0010740F /* FieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
