@@ -10,4 +10,5 @@ import UIKit
 
 class FieldView: UIButton {
   var isClicked = false
+  @IBInspectable var index: Int = 0
 }

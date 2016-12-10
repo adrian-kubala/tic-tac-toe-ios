@@ -95,19 +95,35 @@
                                     <constraint firstAttribute="width" constant="264" id="UTp-Gt-hgd"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVc-Q0-RbY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVc-Q0-RbY" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                 <rect key="frame" x="55" y="291" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="2Jn-Y4-hcp"/>
                                     <constraint firstAttribute="height" constant="84" id="pao-nx-50b"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FhT-Yw-Zp2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIJ-0E-aRK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIJ-0E-aRK" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                 <rect key="frame" x="141" y="291" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="df4-5k-acP"/>
                                     <constraint firstAttribute="width" constant="84" id="drW-G8-dre"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WIx-IZ-gXw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK8-KE-EqD" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                 <rect key="frame" x="141" y="207" width="84" height="84"/>
@@ -115,37 +131,74 @@
                                     <constraint firstAttribute="height" constant="84" id="G0u-kM-TXM"/>
                                     <constraint firstAttribute="width" constant="84" id="b1c-aw-VbK"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ian-58-YWa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJv-yr-6Jf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJv-yr-6Jf" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                 <rect key="frame" x="55" y="377" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="PjR-p4-ouk"/>
                                     <constraint firstAttribute="width" constant="84" id="R1H-oO-lyD"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vnG-5b-age"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFW-9s-8ru">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFW-9s-8ru" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                 <rect key="frame" x="141" y="377" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="blb-by-izI"/>
                                     <constraint firstAttribute="width" constant="84" id="vDe-RV-5Kz"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qq8-vf-jNq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4V-xa-p33">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4V-xa-p33" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                 <rect key="frame" x="229" y="291" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="86C-JH-Lpx"/>
                                     <constraint firstAttribute="height" constant="84" id="gMd-6y-EIg"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzy-MV-RoA"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxw-e0-4xn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxw-e0-4xn" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                 <rect key="frame" x="229" y="207" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="NWh-fK-iIB"/>
                                     <constraint firstAttribute="height" constant="84" id="Ph0-Cf-703"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEg-zp-AnU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohg-cY-OK6" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                 <rect key="frame" x="55" y="207" width="84" height="84"/>
@@ -153,16 +206,29 @@
                                     <constraint firstAttribute="width" constant="84" id="J5D-Lu-vd7"/>
                                     <constraint firstAttribute="height" constant="84" id="NmE-WT-Xa4"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBC-ri-rfd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7f-q5-0Ga">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7f-q5-0Ga" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                 <rect key="frame" x="229" y="377" width="84" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="1tC-PT-NCa"/>
                                     <constraint firstAttribute="width" constant="84" id="fg8-OZ-P1i"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wF-Ln-HsI"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-sign" translatesAutoresizingMaskIntoConstraints="NO" id="yV1-7Z-FUv">
                                 <rect key="frame" x="55" y="42" width="45" height="44"/>

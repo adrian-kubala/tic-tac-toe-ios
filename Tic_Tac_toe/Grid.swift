@@ -9,9 +9,15 @@
 import Foundation
 
 class Grid {
-  let fields: [Field] = []
+  var fields = [Field]()
   var isFull = false
   var circleIsWinner: Bool?
+  
+  init() {
+    for _ in 0 ..< 9 {
+      fields.append(Field())
+    }
+  }
   
   func hasWinner() -> Bool {
     if allFieldsAreClicked(fields[0], fields[1], fields[2])
