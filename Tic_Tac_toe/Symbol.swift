@@ -6,7 +6,7 @@
 //  Copyright © 2016 Adrian Kubała. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum Symbol {
   case circle
@@ -18,6 +18,15 @@ enum Symbol {
       self = .cross
     case .cross:
       self = .circle
+    }
+  }
+  
+  func getImage() -> UIImage? {
+    switch self {
+    case .circle:
+      return #imageLiteral(resourceName: "circle-sign")
+    case .cross:
+      return #imageLiteral(resourceName: "ex-sign")
     }
   }
 }
