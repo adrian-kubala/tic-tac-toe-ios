@@ -11,7 +11,7 @@ import Foundation
 class Grid {
   var fields = [Field]()
   var isFull = false
-  var circleIsWinner: Bool?
+  var winner: Symbol?
   
   subscript(index: Int) -> Field {
     get {
@@ -47,19 +47,19 @@ class Grid {
   }
   
   fileprivate func allFieldsAreClicked(_ fields: Field...) -> Bool {
-    let firstFieldIsCircle = fields[0].isCircle
+    let firstFieldToCheckSymbol = fields[0].symbol
     
     for field in fields {
-      if field.isClicked && field.isCircle && firstFieldIsCircle! {
+      if field.isClicked && field.symbol == .circle && firstFieldToCheckSymbol == .circle  {
         continue
-      } else if field.isClicked && !field.isCircle && !firstFieldIsCircle! {
+      } else if field.isClicked && field.symbol == .cross && firstFieldToCheckSymbol == .cross {
         continue
       } else {
         return false
       }
     }
     
-    circleIsWinner = firstFieldIsCircle! ? true : false
+    winner = firstFieldToCheckSymbol
     resetFields()
     return true
   }

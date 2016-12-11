@@ -10,10 +10,10 @@ import Foundation
 
 class Field {
   var isClicked = false
-  var isCircle: Bool!
+  var symbol: Symbol?
   
   func reset() {
     isClicked = false
-    isCircle = nil
+    symbol = nil
   }
 }

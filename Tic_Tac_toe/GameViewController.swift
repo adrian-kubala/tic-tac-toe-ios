@@ -22,18 +22,18 @@ class GameViewController: UIViewController {
       return
     }
     
-    let fieldViewIsCircle: Bool
+    let fieldSymbol: Symbol
     if turn == .circle {
       sender.setImage(#imageLiteral(resourceName: "circle-sign"), for: .normal)
-      fieldViewIsCircle = true
+      fieldSymbol = .circle
     } else {
       sender.setImage(UIImage(named: "ex-sign"), for: .normal)
-      fieldViewIsCircle = false
+      fieldSymbol = .cross
     }
     
     sender.isClicked = true
     let fieldViewIndex = sender.index
-    grid[fieldViewIndex].isCircle = fieldViewIsCircle
+    grid[fieldViewIndex].symbol = fieldSymbol
     grid[fieldViewIndex].isClicked = true
     
     let _ = didGameEnd()
@@ -50,7 +50,7 @@ class GameViewController: UIViewController {
   }
   
   fileprivate func updatePoints() {
-    if grid.circleIsWinner! {
+    if grid.winner == .circle {
       player1.addPoint()
       circleTextField.updatePoints(player1.points)
     } else {
