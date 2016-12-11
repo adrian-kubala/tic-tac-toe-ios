@@ -11,11 +11,16 @@ import UIKit
 class GameViewController: UIViewController {
   @IBOutlet weak var circleTextField: UITextField!
   @IBOutlet weak var crossTextField: UITextField!
+  @IBOutlet weak var gridView: GridView!
   
   let grid = Grid()
   var player1 = Player(with: Symbol.circle)
   var player2 = Player(with: Symbol.cross)
   var turn = Symbol.circle
+
+  override func viewDidLoad() {
+    gridView.setupGrid()
+  }
   
   @IBAction func makeMove(_ sender: FieldView) {
     if sender.symbol != nil {
@@ -23,6 +28,7 @@ class GameViewController: UIViewController {
     }
     
     sender.update(with: turn)
+    turn.swap()
 
     let fieldViewIndex = sender.index
     grid[fieldViewIndex].symbol = sender.symbol
@@ -32,11 +38,11 @@ class GameViewController: UIViewController {
   
   fileprivate func didGameEnd() -> Bool {
     guard grid.hasWinner() else {
-      turn.swap()
       return false
     }
     
     updatePoints()
+    gridView.reset()
     return true
   }
   
