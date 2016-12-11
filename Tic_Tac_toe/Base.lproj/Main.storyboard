@@ -130,7 +130,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8X-W6-MUd" customClass="GridView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                 <rect key="frame" x="55" y="201" width="264" height="264"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohg-cY-OK6" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohg-cY-OK6" userLabel="0" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="J5D-Lu-vd7"/>
@@ -145,7 +145,7 @@
                                             <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBC-ri-rfd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DF-Cd-m07" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DF-Cd-m07" userLabel="1" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                         <rect key="frame" x="90" y="0.0" width="84" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="guJ-Ml-s5f"/>
@@ -160,7 +160,7 @@
                                             <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9s-In-T1t"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivn-o6-Mqh" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivn-o6-Mqh" userLabel="2" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                         <rect key="frame" x="180" y="0.0" width="84" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="84" id="3fV-CT-cAf"/>
@@ -175,7 +175,7 @@
                                             <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yik-Iv-Te2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prx-Qp-h6X" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prx-Qp-h6X" userLabel="3" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="84" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="84" id="SLx-NK-2Iq"/>
@@ -190,7 +190,7 @@
                                             <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LLU-8H-mbQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvY-7t-fb7" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvY-7t-fb7" userLabel="4" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                         <rect key="frame" x="90" y="90" width="84" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="84" id="FZz-1v-CWN"/>
@@ -205,7 +205,7 @@
                                             <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tYo-dB-1qw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY8-Rp-kuz" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY8-Rp-kuz" userLabel="5" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                         <rect key="frame" x="180" y="90" width="84" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="gFD-gA-LKV"/>
@@ -220,7 +220,7 @@
                                             <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TmQ-2f-FVp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1L-aM-nEV" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1L-aM-nEV" userLabel="6" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="180" width="84" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="0il-I4-noF"/>
@@ -235,7 +235,7 @@
                                             <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWw-C3-teQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xQ-84-Lng" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xQ-84-Lng" userLabel="7" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                         <rect key="frame" x="90" y="180" width="84" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="3Gu-GL-hJB"/>
@@ -250,7 +250,7 @@
                                             <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xhe-VT-UEz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-qO-Lu4" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-qO-Lu4" userLabel="8" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
                                         <rect key="frame" x="180" y="180" width="84" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="Wye-2c-Wzb"/>
@@ -289,6 +289,17 @@
                                     <constraint firstItem="tvY-7t-fb7" firstAttribute="centerY" secondItem="p8X-W6-MUd" secondAttribute="centerY" id="vGT-vc-ouw"/>
                                     <constraint firstItem="6DF-Cd-m07" firstAttribute="top" secondItem="p8X-W6-MUd" secondAttribute="top" id="w6E-2N-sVj"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="fieldViews" destination="ohg-cY-OK6" collectionClass="NSMutableArray" id="V8D-VW-lkp"/>
+                                    <outletCollection property="fieldViews" destination="6DF-Cd-m07" collectionClass="NSMutableArray" id="L4i-x5-8xL"/>
+                                    <outletCollection property="fieldViews" destination="ivn-o6-Mqh" collectionClass="NSMutableArray" id="hPe-QK-0Gv"/>
+                                    <outletCollection property="fieldViews" destination="Prx-Qp-h6X" collectionClass="NSMutableArray" id="4L5-0h-lMY"/>
+                                    <outletCollection property="fieldViews" destination="tvY-7t-fb7" collectionClass="NSMutableArray" id="eqo-ac-z4X"/>
+                                    <outletCollection property="fieldViews" destination="oY8-Rp-kuz" collectionClass="NSMutableArray" id="KoY-qx-Rbn"/>
+                                    <outletCollection property="fieldViews" destination="X1L-aM-nEV" collectionClass="NSMutableArray" id="RZH-ev-u5m"/>
+                                    <outletCollection property="fieldViews" destination="4xQ-84-Lng" collectionClass="NSMutableArray" id="ScI-f2-945"/>
+                                    <outletCollection property="fieldViews" destination="Sxb-qO-Lu4" collectionClass="NSMutableArray" id="lJi-c4-KjG"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -11,5 +11,19 @@ import UIKit
 class GridView: UIView {
   @IBOutlet var fieldViews: [FieldView]!
   
+  subscript(index: Int) -> FieldView {
+    get {
+      return fieldViews[index]
+    }
+    
+    set {
+      fieldViews[index] = newValue
+    }
+  }
   
+  func reset() {
+    for fieldView in fieldViews {
+      fieldView.reset()
+    }
+  }
 }
