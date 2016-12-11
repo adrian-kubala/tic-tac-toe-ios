@@ -13,6 +13,7 @@
 		3A01D2311DFB47DF0010740F /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01D2301DFB47DF0010740F /* FieldView.swift */; };
 		3A0368721DE8751000FADF33 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0368711DE8751000FADF33 /* MainMenuViewController.swift */; };
 		3A3E9AB51DFCDB2E00E445E8 /* UITextField+updatePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E9AB41DFCDB2E00E445E8 /* UITextField+updatePoints.swift */; };
+		3A3E9AB81DFCE2AA00E445E8 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E9AB71DFCE2AA00E445E8 /* Turn.swift */; };
 		3ACB6E3A1DE0E4F1005FB30F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6E391DE0E4F1005FB30F /* AppDelegate.swift */; };
 		3ACB6E3C1DE0E4F1005FB30F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6E3B1DE0E4F1005FB30F /* GameViewController.swift */; };
 		3ACB6E3F1DE0E4F1005FB30F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB6E3D1DE0E4F1005FB30F /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		3A01D2301DFB47DF0010740F /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 		3A0368711DE8751000FADF33 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		3A3E9AB41DFCDB2E00E445E8 /* UITextField+updatePoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+updatePoints.swift"; sourceTree = "<group>"; };
+		3A3E9AB71DFCE2AA00E445E8 /* Turn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
 		3ACB6E361DE0E4F1005FB30F /* Tic_Tac_toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tic_Tac_toe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACB6E391DE0E4F1005FB30F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ACB6E3B1DE0E4F1005FB30F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		3A3E9AB91DFCE46B00E445E8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				3A3E9AB71DFCE2AA00E445E8 /* Turn.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
 		3ACB6E2D1DE0E4F1005FB30F = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +111,12 @@
 		3ACB6E381DE0E4F1005FB30F /* Tic_Tac_toe */ = {
 			isa = PBXGroup;
 			children = (
-				3ACB6E391DE0E4F1005FB30F /* AppDelegate.swift */,
 				3A01D22D1DFB468B0010740F /* Model */,
 				3A01D2321DFB49230010740F /* View */,
 				3A0368731DE8753100FADF33 /* ViewController */,
+				3A3E9AB91DFCE46B00E445E8 /* Enums */,
 				3A3E9AB61DFCDC0500E445E8 /* Extensions */,
+				3ACB6E391DE0E4F1005FB30F /* AppDelegate.swift */,
 				3ACB6E3D1DE0E4F1005FB30F /* Main.storyboard */,
 				3ACB6E401DE0E4F1005FB30F /* Assets.xcassets */,
 				3ACB6E421DE0E4F1005FB30F /* LaunchScreen.storyboard */,
@@ -190,6 +201,7 @@
 				3ACB6E3C1DE0E4F1005FB30F /* GameViewController.swift in Sources */,
 				3A01D2261DFB411A0010740F /* Field.swift in Sources */,
 				3A3E9AB51DFCDB2E00E445E8 /* UITextField+updatePoints.swift in Sources */,
+				3A3E9AB81DFCE2AA00E445E8 /* Turn.swift in Sources */,
 				3A01D2281DFB42300010740F /* Grid.swift in Sources */,
 				3A01D22A1DFB43D50010740F /* Player.swift in Sources */,
 				3ACB6E3A1DE0E4F1005FB30F /* AppDelegate.swift in Sources */,

@@ -15,13 +15,7 @@ class GameViewController: UIViewController {
   let grid = Grid()
   var player1 = Player(chooseCircle: true)
   var player2 = Player(chooseCircle: false)
-  var isCircleTurn = true
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    
-  }
+  var turn = Turn.circle
   
   @IBAction func makeMove(_ sender: FieldView) {
     if sender.isClicked {
@@ -29,7 +23,7 @@ class GameViewController: UIViewController {
     }
     
     let fieldViewIsCircle: Bool
-    if isCircleTurn {
+    if turn == .circle {
       sender.setImage(#imageLiteral(resourceName: "circle-sign"), for: .normal)
       fieldViewIsCircle = true
     } else {
@@ -47,7 +41,7 @@ class GameViewController: UIViewController {
   
   fileprivate func didGameEnd() -> Bool {
     guard grid.hasWinner() else {
-      isCircleTurn = !isCircleTurn
+      turn.swap()
       return false
     }
     
