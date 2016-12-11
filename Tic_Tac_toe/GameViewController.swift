@@ -11,6 +11,7 @@ import UIKit
 class GameViewController: UIViewController {
   @IBOutlet weak var circleTextField: UITextField!
   @IBOutlet weak var crossTextField: UITextField!
+  @IBOutlet var fieldViews: [FieldView]!
   
   let grid = Grid()
   var player1 = Player(with: Symbol.circle)
@@ -23,11 +24,11 @@ class GameViewController: UIViewController {
     }
     
     sender.update(with: turn)
+    turn.swap()
 
     let fieldViewIndex = sender.index
     grid[fieldViewIndex].symbol = sender.symbol
     
-    turn.swap()
     let _ = didGameEnd()
   }
   
@@ -37,6 +38,10 @@ class GameViewController: UIViewController {
     }
     
     updatePoints()
+    for item in fieldViews {
+      item.reset()
+    }
+    
     return true
   }
   
