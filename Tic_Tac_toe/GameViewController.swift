@@ -17,6 +17,10 @@ class GameViewController: UIViewController {
   var player1 = Player(with: Symbol.circle)
   var player2 = Player(with: Symbol.cross)
   var turn = Symbol.circle
+
+  override func viewDidLoad() {
+    gridView.setupGrid()
+  }
   
   @IBAction func makeMove(_ sender: FieldView) {
     if sender.symbol != nil {

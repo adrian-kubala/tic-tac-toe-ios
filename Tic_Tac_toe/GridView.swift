@@ -21,6 +21,10 @@ class GridView: UIView {
     }
   }
   
+  func setupGrid() {
+    backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "grid"))
+  }
+  
   func reset() {
     for fieldView in fieldViews {
       fieldView.reset()
