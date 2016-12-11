@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Turn {
+enum Symbol {
   case circle
   case cross
   

@@ -15,7 +15,7 @@ class GameViewController: UIViewController {
   let grid = Grid()
   var player1 = Player(chooseCircle: true)
   var player2 = Player(chooseCircle: false)
-  var turn = Turn.circle
+  var turn = Symbol.circle
   
   @IBAction func makeMove(_ sender: FieldView) {
     if sender.isClicked {
