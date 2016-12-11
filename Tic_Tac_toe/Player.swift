@@ -9,11 +9,11 @@
 import Foundation
 
 class Player {
-  let isCircle: Bool
+  let symbol: Symbol
   var points = 0
   
-  init(chooseCircle isCircle: Bool) {
-    self.isCircle = isCircle
+  init(chooseSymbol symbol: Symbol) {
+    self.symbol = symbol
   }
   
   func addPoint() {
