@@ -9,6 +9,11 @@
 import UIKit
 
 class FieldView: UIButton {
-  var isClicked = false
+  var symbol: Symbol?
   @IBInspectable var index: Int = 0
+  
+  func update(with symbol: Symbol) {
+    self.symbol = symbol
+    setImage(symbol.getImage(), for: .normal)
+  }
 }

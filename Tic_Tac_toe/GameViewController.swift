@@ -18,22 +18,14 @@ class GameViewController: UIViewController {
   var turn = Symbol.circle
   
   @IBAction func makeMove(_ sender: FieldView) {
-    if sender.isClicked {
+    if sender.symbol != nil {
       return
     }
     
-    let fieldSymbol: Symbol
-    if turn == .circle {
-      sender.setImage(#imageLiteral(resourceName: "circle-sign"), for: .normal)
-      fieldSymbol = .circle
-    } else {
-      sender.setImage(UIImage(named: "ex-sign"), for: .normal)
-      fieldSymbol = .cross
-    }
-    
-    sender.isClicked = true
+    sender.update(with: turn)
+
     let fieldViewIndex = sender.index
-    grid[fieldViewIndex].symbol = fieldSymbol
+    grid[fieldViewIndex].symbol = sender.symbol
     grid[fieldViewIndex].isClicked = true
     
     let _ = didGameEnd()
