@@ -39,10 +39,10 @@ class GameViewController: UIViewController {
     
     sender.isClicked = true
     let fieldViewIndex = sender.index
-    grid.fields[fieldViewIndex].isCircle = fieldViewIsCircle
-    grid.fields[fieldViewIndex].isClicked = true
+    grid[fieldViewIndex].isCircle = fieldViewIsCircle
+    grid[fieldViewIndex].isClicked = true
     
-    didGameEnd()
+    let _ = didGameEnd()
   }
   
   fileprivate func didGameEnd() -> Bool {

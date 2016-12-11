@@ -13,6 +13,16 @@ class Grid {
   var isFull = false
   var circleIsWinner: Bool?
   
+  subscript(index: Int) -> Field {
+    get {
+      return fields[index]
+    }
+    
+    set {
+      fields[index] = newValue
+    }
+  }
+  
   init() {
     for _ in 0 ..< 9 {
       fields.append(Field())
@@ -50,11 +60,11 @@ class Grid {
     }
     
     circleIsWinner = firstFieldIsCircle! ? true : false
-    reset()
+    resetFields()
     return true
   }
   
-  fileprivate func reset() {
+  fileprivate func resetFields() {
     for field in fields {
       field.reset()
     }
