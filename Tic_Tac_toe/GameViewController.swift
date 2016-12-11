@@ -26,7 +26,6 @@ class GameViewController: UIViewController {
 
     let fieldViewIndex = sender.index
     grid[fieldViewIndex].symbol = sender.symbol
-    grid[fieldViewIndex].isClicked = true
     
     let _ = didGameEnd()
   }

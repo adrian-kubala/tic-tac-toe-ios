@@ -50,9 +50,9 @@ class Grid {
     let firstFieldToCheckSymbol = fields[0].symbol
     
     for field in fields {
-      if field.isClicked && field.symbol == .circle && firstFieldToCheckSymbol == .circle  {
+      if field.symbol == .circle && firstFieldToCheckSymbol == .circle  {
         continue
-      } else if field.isClicked && field.symbol == .cross && firstFieldToCheckSymbol == .cross {
+      } else if field.symbol == .cross && firstFieldToCheckSymbol == .cross {
         continue
       } else {
         return false

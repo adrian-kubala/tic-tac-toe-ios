@@ -9,11 +9,9 @@
 import Foundation
 
 class Field {
-  var isClicked = false
   var symbol: Symbol?
   
   func reset() {
-    isClicked = false
     symbol = nil
   }
 }
