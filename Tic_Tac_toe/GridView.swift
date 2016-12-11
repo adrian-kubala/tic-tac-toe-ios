@@ -21,10 +21,6 @@ class GridView: UIView {
     }
   }
   
-  func fill(with views: [FieldView]) {
-    fieldViews.append(contentsOf: views)
-  }
-  
   func reset() {
     for fieldView in fieldViews {
       fieldView.reset()

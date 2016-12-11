@@ -289,6 +289,17 @@
                                     <constraint firstItem="tvY-7t-fb7" firstAttribute="centerY" secondItem="p8X-W6-MUd" secondAttribute="centerY" id="vGT-vc-ouw"/>
                                     <constraint firstItem="6DF-Cd-m07" firstAttribute="top" secondItem="p8X-W6-MUd" secondAttribute="top" id="w6E-2N-sVj"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="fieldViews" destination="ohg-cY-OK6" collectionClass="NSMutableArray" id="Yfz-eg-HRc"/>
+                                    <outletCollection property="fieldViews" destination="6DF-Cd-m07" collectionClass="NSMutableArray" id="t4N-Ip-VkL"/>
+                                    <outletCollection property="fieldViews" destination="ivn-o6-Mqh" collectionClass="NSMutableArray" id="aws-Gw-Zih"/>
+                                    <outletCollection property="fieldViews" destination="Prx-Qp-h6X" collectionClass="NSMutableArray" id="blP-yb-tsR"/>
+                                    <outletCollection property="fieldViews" destination="tvY-7t-fb7" collectionClass="NSMutableArray" id="ROb-M1-KFa"/>
+                                    <outletCollection property="fieldViews" destination="oY8-Rp-kuz" collectionClass="NSMutableArray" id="Q13-cZ-eSg"/>
+                                    <outletCollection property="fieldViews" destination="X1L-aM-nEV" collectionClass="NSMutableArray" id="AzT-u5-lTH"/>
+                                    <outletCollection property="fieldViews" destination="4xQ-84-Lng" collectionClass="NSMutableArray" id="b8Y-dG-s1g"/>
+                                    <outletCollection property="fieldViews" destination="Sxb-qO-Lu4" collectionClass="NSMutableArray" id="UHn-Ks-CgW"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -310,15 +321,7 @@
                     <connections>
                         <outlet property="circleTextField" destination="Auq-W1-eqK" id="fay-Bn-D6n"/>
                         <outlet property="crossTextField" destination="Bd7-ea-z0f" id="MDw-nr-Q9b"/>
-                        <outletCollection property="fieldViews" destination="Sxb-qO-Lu4" collectionClass="NSMutableArray" id="RXD-Py-czw"/>
-                        <outletCollection property="fieldViews" destination="X1L-aM-nEV" collectionClass="NSMutableArray" id="3Mb-m9-k5g"/>
-                        <outletCollection property="fieldViews" destination="Prx-Qp-h6X" collectionClass="NSMutableArray" id="nOQ-Pe-6h9"/>
-                        <outletCollection property="fieldViews" destination="ohg-cY-OK6" collectionClass="NSMutableArray" id="gXv-uw-Uzj"/>
-                        <outletCollection property="fieldViews" destination="6DF-Cd-m07" collectionClass="NSMutableArray" id="uVT-zG-MCc"/>
-                        <outletCollection property="fieldViews" destination="ivn-o6-Mqh" collectionClass="NSMutableArray" id="SYu-II-Bg2"/>
-                        <outletCollection property="fieldViews" destination="tvY-7t-fb7" collectionClass="NSMutableArray" id="huW-4k-wWX"/>
-                        <outletCollection property="fieldViews" destination="oY8-Rp-kuz" collectionClass="NSMutableArray" id="afk-2Z-EsA"/>
-                        <outletCollection property="fieldViews" destination="4xQ-84-Lng" collectionClass="NSMutableArray" id="MIx-XL-q0A"/>
+                        <outlet property="gridView" destination="p8X-W6-MUd" id="Dl8-pQ-cHt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
