@@ -6,8 +6,9 @@
 //  Copyright © 2016 Adrian Kubała. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class GridView {
+class GridView: UIView {
   
+  @IBOutlet var fieldViews: [FieldView]!
 }
