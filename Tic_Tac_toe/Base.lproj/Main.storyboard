@@ -88,148 +88,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="b2F-Nh-5dd">
-                                <rect key="frame" x="55" y="201" width="264" height="264"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="264" id="2AV-7w-fMX"/>
-                                    <constraint firstAttribute="width" constant="264" id="UTp-Gt-hgd"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohg-cY-OK6" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="55" y="207" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="84" id="J5D-Lu-vd7"/>
-                                    <constraint firstAttribute="height" constant="84" id="NmE-WT-Xa4"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBC-ri-rfd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK8-KE-EqD" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="141" y="207" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="G0u-kM-TXM"/>
-                                    <constraint firstAttribute="width" constant="84" id="b1c-aw-VbK"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ian-58-YWa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxw-e0-4xn" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="229" y="207" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="84" id="NWh-fK-iIB"/>
-                                    <constraint firstAttribute="height" constant="84" id="Ph0-Cf-703"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
-                                        <integer key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEg-zp-AnU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVc-Q0-RbY" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="55" y="291" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="84" id="2Jn-Y4-hcp"/>
-                                    <constraint firstAttribute="height" constant="84" id="pao-nx-50b"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FhT-Yw-Zp2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIJ-0E-aRK" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="141" y="291" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="df4-5k-acP"/>
-                                    <constraint firstAttribute="width" constant="84" id="drW-G8-dre"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
-                                        <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WIx-IZ-gXw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4V-xa-p33" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="229" y="291" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="84" id="86C-JH-Lpx"/>
-                                    <constraint firstAttribute="height" constant="84" id="gMd-6y-EIg"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzy-MV-RoA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJv-yr-6Jf" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="55" y="377" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="PjR-p4-ouk"/>
-                                    <constraint firstAttribute="width" constant="84" id="R1H-oO-lyD"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vnG-5b-age"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFW-9s-8ru" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="141" y="377" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="blb-by-izI"/>
-                                    <constraint firstAttribute="width" constant="84" id="vDe-RV-5Kz"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
-                                        <integer key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qq8-vf-jNq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7f-q5-0Ga" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="229" y="377" width="84" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="1tC-PT-NCa"/>
-                                    <constraint firstAttribute="width" constant="84" id="fg8-OZ-P1i"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wF-Ln-HsI"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-sign" translatesAutoresizingMaskIntoConstraints="NO" id="yV1-7Z-FUv">
                                 <rect key="frame" x="55" y="42" width="45" height="44"/>
                                 <constraints>
@@ -256,7 +114,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWP-rI-DGz">
-                                <rect key="frame" x="132" y="532" width="110" height="32"/>
+                                <rect key="frame" x="132" y="507" width="110" height="32"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="18"/>
                                 <state key="normal" title="End the game">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -269,39 +127,184 @@
                                     <constraint firstAttribute="width" constant="45" id="fNL-GG-6UC"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8X-W6-MUd" customClass="GridView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                <rect key="frame" x="55" y="201" width="264" height="264"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohg-cY-OK6" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="84" id="J5D-Lu-vd7"/>
+                                            <constraint firstAttribute="height" constant="84" id="NmE-WT-Xa4"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBC-ri-rfd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DF-Cd-m07" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="0.0" width="84" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="84" id="guJ-Ml-s5f"/>
+                                            <constraint firstAttribute="height" constant="84" id="vKK-83-cQ1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9s-In-T1t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivn-o6-Mqh" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                        <rect key="frame" x="180" y="0.0" width="84" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="3fV-CT-cAf"/>
+                                            <constraint firstAttribute="width" constant="84" id="j91-ky-8g4"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yik-Iv-Te2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prx-Qp-h6X" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="90" width="84" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="SLx-NK-2Iq"/>
+                                            <constraint firstAttribute="width" constant="84" id="vF1-63-rLP"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LLU-8H-mbQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvY-7t-fb7" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="90" width="84" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="FZz-1v-CWN"/>
+                                            <constraint firstAttribute="width" constant="84" id="y1I-WM-phq"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tYo-dB-1qw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY8-Rp-kuz" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                        <rect key="frame" x="180" y="90" width="84" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="84" id="gFD-gA-LKV"/>
+                                            <constraint firstAttribute="height" constant="84" id="t0a-5C-YpW"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TmQ-2f-FVp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1L-aM-nEV" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="180" width="84" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="84" id="0il-I4-noF"/>
+                                            <constraint firstAttribute="height" constant="84" id="kwZ-90-YL9"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWw-C3-teQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xQ-84-Lng" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="180" width="84" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="84" id="3Gu-GL-hJB"/>
+                                            <constraint firstAttribute="height" constant="84" id="5i3-FS-DZm"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xhe-VT-UEz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-qO-Lu4" customClass="FieldView" customModule="Tic_Tac_toe" customModuleProvider="target">
+                                        <rect key="frame" x="180" y="180" width="84" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="84" id="Wye-2c-Wzb"/>
+                                            <constraint firstAttribute="height" constant="84" id="pjB-9f-Fby"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hHY-4I-Qe6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.40666774469848666" blue="0.3367753498895123" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Sxb-qO-Lu4" secondAttribute="bottom" id="276-UB-fJy"/>
+                                    <constraint firstItem="Prx-Qp-h6X" firstAttribute="leading" secondItem="p8X-W6-MUd" secondAttribute="leading" id="7iG-Zn-8Z7"/>
+                                    <constraint firstItem="4xQ-84-Lng" firstAttribute="centerX" secondItem="p8X-W6-MUd" secondAttribute="centerX" id="960-RN-h8w"/>
+                                    <constraint firstItem="6DF-Cd-m07" firstAttribute="centerX" secondItem="p8X-W6-MUd" secondAttribute="centerX" id="CWi-2z-ziB"/>
+                                    <constraint firstAttribute="trailing" secondItem="ivn-o6-Mqh" secondAttribute="trailing" id="Ig4-PE-sRN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sxb-qO-Lu4" secondAttribute="trailing" id="PMJ-FO-tQ2"/>
+                                    <constraint firstAttribute="height" constant="264" id="S5z-IG-nnJ"/>
+                                    <constraint firstItem="4xQ-84-Lng" firstAttribute="top" secondItem="p8X-W6-MUd" secondAttribute="top" constant="180" id="X6v-Eo-GfO"/>
+                                    <constraint firstAttribute="trailing" secondItem="oY8-Rp-kuz" secondAttribute="trailing" id="YqG-uz-s19"/>
+                                    <constraint firstItem="ohg-cY-OK6" firstAttribute="leading" secondItem="p8X-W6-MUd" secondAttribute="leading" id="ZP9-qS-BXJ"/>
+                                    <constraint firstAttribute="width" constant="264" id="acP-0n-TL8"/>
+                                    <constraint firstItem="X1L-aM-nEV" firstAttribute="leading" secondItem="p8X-W6-MUd" secondAttribute="leading" id="eb7-vc-JBZ"/>
+                                    <constraint firstItem="ivn-o6-Mqh" firstAttribute="top" secondItem="p8X-W6-MUd" secondAttribute="top" id="fUZ-gd-dze"/>
+                                    <constraint firstItem="oY8-Rp-kuz" firstAttribute="centerY" secondItem="p8X-W6-MUd" secondAttribute="centerY" id="fwe-kK-jYc"/>
+                                    <constraint firstItem="tvY-7t-fb7" firstAttribute="centerX" secondItem="p8X-W6-MUd" secondAttribute="centerX" id="kMX-cI-BZb"/>
+                                    <constraint firstItem="ohg-cY-OK6" firstAttribute="top" secondItem="p8X-W6-MUd" secondAttribute="top" id="lRn-Pm-ham"/>
+                                    <constraint firstAttribute="bottom" secondItem="X1L-aM-nEV" secondAttribute="bottom" id="p8P-fn-3NL"/>
+                                    <constraint firstItem="Prx-Qp-h6X" firstAttribute="centerY" secondItem="p8X-W6-MUd" secondAttribute="centerY" id="sqB-j4-v7l"/>
+                                    <constraint firstItem="tvY-7t-fb7" firstAttribute="centerY" secondItem="p8X-W6-MUd" secondAttribute="centerY" id="vGT-vc-ouw"/>
+                                    <constraint firstItem="6DF-Cd-m07" firstAttribute="top" secondItem="p8X-W6-MUd" secondAttribute="top" id="w6E-2N-sVj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="b2F-Nh-5dd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8U4-ME-ybQ"/>
-                            <constraint firstItem="uK8-KE-EqD" firstAttribute="leading" secondItem="ohg-cY-OK6" secondAttribute="trailing" constant="2" id="BKR-1d-fgO"/>
-                            <constraint firstItem="dVc-Q0-RbY" firstAttribute="top" secondItem="ohg-cY-OK6" secondAttribute="bottom" id="BwL-4y-Dvq"/>
+                            <constraint firstItem="p8X-W6-MUd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7it-5U-6a1"/>
+                            <constraint firstItem="p8X-W6-MUd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CPN-ec-iIQ"/>
                             <constraint firstItem="Bd7-ea-z0f" firstAttribute="centerY" secondItem="bcv-Wa-Wby" secondAttribute="centerY" id="Da7-Oj-6TS"/>
-                            <constraint firstItem="Gxw-e0-4xn" firstAttribute="leading" secondItem="uK8-KE-EqD" secondAttribute="trailing" constant="4" id="OAZ-5b-wS4"/>
-                            <constraint firstItem="cIJ-0E-aRK" firstAttribute="top" secondItem="dVc-Q0-RbY" secondAttribute="top" id="OUf-sj-zaF"/>
-                            <constraint firstItem="oWP-rI-DGz" firstAttribute="top" secondItem="b2F-Nh-5dd" secondAttribute="bottom" constant="67" id="P0R-uQ-P9E"/>
                             <constraint firstItem="bcv-Wa-Wby" firstAttribute="top" secondItem="yV1-7Z-FUv" secondAttribute="bottom" constant="18" id="QgB-1H-5vy"/>
-                            <constraint firstItem="C4V-xa-p33" firstAttribute="top" secondItem="cIJ-0E-aRK" secondAttribute="top" id="R7j-Rw-dGp"/>
-                            <constraint firstItem="Gxw-e0-4xn" firstAttribute="top" secondItem="uK8-KE-EqD" secondAttribute="top" id="RvS-xg-HNh"/>
-                            <constraint firstItem="uK8-KE-EqD" firstAttribute="top" secondItem="ohg-cY-OK6" secondAttribute="top" id="S9o-9f-zBA"/>
-                            <constraint firstItem="bcv-Wa-Wby" firstAttribute="leading" secondItem="b2F-Nh-5dd" secondAttribute="leading" id="Spv-Xc-9Az"/>
-                            <constraint firstItem="b2F-Nh-5dd" firstAttribute="leading" secondItem="ohg-cY-OK6" secondAttribute="trailing" constant="-84" id="VKH-wv-RPL"/>
-                            <constraint firstItem="b2F-Nh-5dd" firstAttribute="top" secondItem="ohg-cY-OK6" secondAttribute="bottom" constant="-90" id="W7g-4c-eb8"/>
-                            <constraint firstItem="b2F-Nh-5dd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WsL-NJ-V7R"/>
-                            <constraint firstItem="b2F-Nh-5dd" firstAttribute="top" secondItem="bcv-Wa-Wby" secondAttribute="bottom" constant="53" id="YJe-j8-nqb"/>
-                            <constraint firstItem="aJv-yr-6Jf" firstAttribute="leading" secondItem="dVc-Q0-RbY" secondAttribute="leading" id="Zy7-8I-wHF"/>
-                            <constraint firstItem="EFW-9s-8ru" firstAttribute="bottom" secondItem="aJv-yr-6Jf" secondAttribute="bottom" id="bSG-gn-tuT"/>
-                            <constraint firstItem="H7f-q5-0Ga" firstAttribute="bottom" secondItem="EFW-9s-8ru" secondAttribute="bottom" id="cqg-XN-3go"/>
-                            <constraint firstItem="H7f-q5-0Ga" firstAttribute="leading" secondItem="EFW-9s-8ru" secondAttribute="trailing" constant="4" id="dLZ-o7-wCb"/>
+                            <constraint firstItem="p8X-W6-MUd" firstAttribute="leading" secondItem="bcv-Wa-Wby" secondAttribute="leading" id="YDW-88-uNa"/>
                             <constraint firstItem="yV1-7Z-FUv" firstAttribute="leading" secondItem="bcv-Wa-Wby" secondAttribute="leading" id="eOu-S6-bbU"/>
-                            <constraint firstItem="cIJ-0E-aRK" firstAttribute="leading" secondItem="dVc-Q0-RbY" secondAttribute="trailing" constant="2" id="eoh-h0-EqX"/>
-                            <constraint firstItem="dVc-Q0-RbY" firstAttribute="leading" secondItem="ohg-cY-OK6" secondAttribute="leading" id="fuE-uk-7Vs"/>
                             <constraint firstItem="Auq-W1-eqK" firstAttribute="leading" secondItem="yV1-7Z-FUv" secondAttribute="trailing" constant="22" id="jZN-61-pt9"/>
-                            <constraint firstItem="EFW-9s-8ru" firstAttribute="leading" secondItem="aJv-yr-6Jf" secondAttribute="trailing" constant="2" id="lmp-D9-lgn"/>
-                            <constraint firstItem="C4V-xa-p33" firstAttribute="leading" secondItem="cIJ-0E-aRK" secondAttribute="trailing" constant="4" id="oPD-lR-fdA"/>
                             <constraint firstItem="Bd7-ea-z0f" firstAttribute="leading" secondItem="bcv-Wa-Wby" secondAttribute="trailing" constant="22" id="qcg-kQ-Gwd"/>
                             <constraint firstItem="oWP-rI-DGz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rgh-wQ-n6J"/>
                             <constraint firstItem="Auq-W1-eqK" firstAttribute="centerY" secondItem="yV1-7Z-FUv" secondAttribute="centerY" id="uqm-bP-rAi"/>
-                            <constraint firstItem="aJv-yr-6Jf" firstAttribute="top" secondItem="dVc-Q0-RbY" secondAttribute="bottom" constant="2" id="xWm-wL-gEx"/>
+                            <constraint firstItem="p8X-W6-MUd" firstAttribute="top" secondItem="bcv-Wa-Wby" secondAttribute="bottom" constant="53" id="wBF-Dd-JCv"/>
+                            <constraint firstItem="oWP-rI-DGz" firstAttribute="top" secondItem="p8X-W6-MUd" secondAttribute="bottom" constant="42" id="zsT-Lu-C6m"/>
                         </constraints>
                     </view>
                     <connections>
@@ -317,6 +320,5 @@
     <resources>
         <image name="circle-sign" width="128" height="126"/>
         <image name="ex-sign" width="103" height="99"/>
-        <image name="grid" width="264" height="264"/>
     </resources>
 </document>

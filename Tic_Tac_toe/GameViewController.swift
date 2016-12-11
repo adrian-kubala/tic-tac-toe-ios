@@ -27,12 +27,12 @@ class GameViewController: UIViewController {
     let fieldViewIndex = sender.index
     grid[fieldViewIndex].symbol = sender.symbol
     
+    turn.swap()
     let _ = didGameEnd()
   }
   
   fileprivate func didGameEnd() -> Bool {
     guard grid.hasWinner() else {
-      turn.swap()
       return false
     }
     

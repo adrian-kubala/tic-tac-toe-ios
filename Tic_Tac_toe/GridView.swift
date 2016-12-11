@@ -9,6 +9,7 @@
 import UIKit
 
 class GridView: UIView {
-  
   @IBOutlet var fieldViews: [FieldView]!
+  
+  
 }
