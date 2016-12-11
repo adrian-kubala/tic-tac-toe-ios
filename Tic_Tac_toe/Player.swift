@@ -12,7 +12,7 @@ class Player {
   let symbol: Symbol
   var points = 0
   
-  init(chooseSymbol symbol: Symbol) {
+  init(with symbol: Symbol) {
     self.symbol = symbol
   }
   

@@ -12,6 +12,7 @@
 		3A01D22A1DFB43D50010740F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01D2291DFB43D50010740F /* Player.swift */; };
 		3A01D2311DFB47DF0010740F /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01D2301DFB47DF0010740F /* FieldView.swift */; };
 		3A0368721DE8751000FADF33 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0368711DE8751000FADF33 /* MainMenuViewController.swift */; };
+		3A1485951DFDB85F004A0897 /* Array<Field>+fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1485941DFDB85F004A0897 /* Array<Field>+fill.swift */; };
 		3A3E9AB51DFCDB2E00E445E8 /* UITextField+updatePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E9AB41DFCDB2E00E445E8 /* UITextField+updatePoints.swift */; };
 		3A3E9AB81DFCE2AA00E445E8 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E9AB71DFCE2AA00E445E8 /* Symbol.swift */; };
 		3ACB6E3A1DE0E4F1005FB30F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6E391DE0E4F1005FB30F /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 		3A01D2291DFB43D50010740F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3A01D2301DFB47DF0010740F /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 		3A0368711DE8751000FADF33 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		3A1485941DFDB85F004A0897 /* Array<Field>+fill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array<Field>+fill.swift"; sourceTree = "<group>"; };
 		3A3E9AB41DFCDB2E00E445E8 /* UITextField+updatePoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+updatePoints.swift"; sourceTree = "<group>"; };
 		3A3E9AB71DFCE2AA00E445E8 /* Symbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		3ACB6E361DE0E4F1005FB30F /* Tic_Tac_toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tic_Tac_toe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				3A3E9AB41DFCDB2E00E445E8 /* UITextField+updatePoints.swift */,
+				3A1485941DFDB85F004A0897 /* Array<Field>+fill.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				3A01D22A1DFB43D50010740F /* Player.swift in Sources */,
 				3ACB6E3A1DE0E4F1005FB30F /* AppDelegate.swift in Sources */,
 				3A01D2311DFB47DF0010740F /* FieldView.swift in Sources */,
+				3A1485951DFDB85F004A0897 /* Array<Field>+fill.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

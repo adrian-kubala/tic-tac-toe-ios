@@ -24,9 +24,7 @@ class Grid {
   }
   
   init() {
-    for _ in 0 ..< 9 {
-      fields.append(Field())
-    }
+    fields.fillWithFields(9)
   }
   
   func hasWinner() -> Bool {

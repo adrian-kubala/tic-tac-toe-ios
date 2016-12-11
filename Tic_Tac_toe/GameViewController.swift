@@ -13,8 +13,8 @@ class GameViewController: UIViewController {
   @IBOutlet weak var crossTextField: UITextField!
   
   let grid = Grid()
-  var player1 = Player(chooseSymbol: Symbol.circle)
-  var player2 = Player(chooseSymbol: Symbol.cross)
+  var player1 = Player(with: Symbol.circle)
+  var player2 = Player(with: Symbol.cross)
   var turn = Symbol.circle
   
   @IBAction func makeMove(_ sender: FieldView) {
