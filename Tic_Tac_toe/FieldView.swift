@@ -16,4 +16,9 @@ class FieldView: UIButton {
     self.symbol = symbol
     setImage(symbol.getImage(), for: .normal)
   }
+  
+  func reset() {
+    symbol = nil
+    setImage(nil, for: .normal)
+  }
 }
