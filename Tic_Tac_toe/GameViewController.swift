@@ -45,19 +45,23 @@ class GameViewController: UIViewController {
     didGameEnd()
   }
   
-  func didGameEnd() {
+  fileprivate func didGameEnd() -> Bool {
     guard grid.hasWinner() else {
       isCircleTurn = !isCircleTurn
-      return
+      return false
     }
     
-    let points: Int
+    updatePoints()
+    return true
+  }
+  
+  fileprivate func updatePoints() {
     if grid.circleIsWinner! {
-      points = player1.points + 1
-      circleTextField.text = "\(points) points"
+      player1.addPoint()
+      circleTextField.updatePoints(player1.points)
     } else {
-      points = player2.points + 1
-      crossTextField.text = "\(points) points"
+      player2.addPoint()
+      crossTextField.updatePoints(player2.points)
     }
   }
 }

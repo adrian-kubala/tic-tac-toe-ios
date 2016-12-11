@@ -15,4 +15,8 @@ class Player {
   init(chooseCircle isCircle: Bool) {
     self.isCircle = isCircle
   }
+  
+  func addPoint() {
+    points += 1
+  }
 }

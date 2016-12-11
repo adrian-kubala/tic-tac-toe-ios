@@ -50,6 +50,13 @@ class Grid {
     }
     
     circleIsWinner = firstFieldIsCircle! ? true : false
+    reset()
     return true
+  }
+  
+  fileprivate func reset() {
+    for field in fields {
+      field.reset()
+    }
   }
 }

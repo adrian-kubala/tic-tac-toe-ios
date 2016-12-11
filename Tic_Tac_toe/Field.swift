@@ -11,4 +11,9 @@ import Foundation
 class Field {
   var isClicked = false
   var isCircle: Bool!
+  
+  func reset() {
+    isClicked = false
+    isCircle = nil
+  }
 }
