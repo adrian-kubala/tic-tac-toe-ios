@@ -17,7 +17,7 @@ class GameViewController: UIViewController {
   var player1 = Player(with: Symbol.circle)
   var player2 = Player(with: Symbol.cross)
   var turn = Symbol.circle
-
+  
   override func viewDidLoad() {
     gridView.setupGrid()
   }
@@ -29,25 +29,24 @@ class GameViewController: UIViewController {
     
     sender.update(with: turn)
     turn.swap()
-
+    
     let fieldViewIndex = sender.index
     grid[fieldViewIndex].symbol = sender.symbol
     
-    let _ = didGameEnd()
+    if gameDidEnd() {
+      gridView.reset()
+    }
   }
   
-  fileprivate func didGameEnd() -> Bool {
+  fileprivate func gameDidEnd() -> Bool {
     guard grid.hasWinner() else {
       if grid.isFull {
-        gridView.reset()
         return true
       }
       return false
     }
     
-
     updatePoints()
-    gridView.reset()
     return true
   }
   

@@ -9,7 +9,7 @@
 import Foundation
 
 class Grid {
-  var fields = [Field]()
+  fileprivate var fields = [Field]()
   var isFull: Bool {
     for field in fields {
       if field.symbol == nil {
