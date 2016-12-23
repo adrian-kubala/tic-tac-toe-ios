@@ -38,9 +38,14 @@ class GameViewController: UIViewController {
   
   fileprivate func didGameEnd() -> Bool {
     guard grid.hasWinner() else {
+      if grid.isFull {
+        gridView.reset()
+        return true
+      }
       return false
     }
     
+
     updatePoints()
     gridView.reset()
     return true

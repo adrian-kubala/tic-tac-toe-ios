@@ -10,7 +10,16 @@ import Foundation
 
 class Grid {
   var fields = [Field]()
-  var isFull = false
+  var isFull: Bool {
+    for field in fields {
+      if field.symbol == nil {
+        return false
+      }
+    }
+    
+    resetFields()
+    return true
+  }
   var winner: Symbol?
   
   subscript(index: Int) -> Field {
