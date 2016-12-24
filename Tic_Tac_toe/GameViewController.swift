@@ -13,10 +13,7 @@ class GameViewController: UIViewController {
   @IBOutlet weak var crossTextField: UITextField!
   @IBOutlet weak var gridView: GridView!
   
-  let grid = Grid()
-  var player1 = Player(with: Symbol.circle)
-  var player2 = Player(with: Symbol.cross)
-  var turn = Symbol.circle
+  let game = Game()
   
   override func viewDidLoad() {
     gridView.setupGrid()
@@ -27,11 +24,10 @@ class GameViewController: UIViewController {
       return
     }
     
-    sender.update(with: turn)
-    turn.swap()
+    sender.update(with: game.turn)
     
-    let fieldViewIndex = sender.index
-    grid[fieldViewIndex].symbol = sender.symbol
+    game.updateGridWith(symbol: sender.symbol!, at: sender.index)
+    game.swapTurn()
     
     if gameDidEnd() {
       gridView.reset()
@@ -39,25 +35,15 @@ class GameViewController: UIViewController {
   }
   
   private func gameDidEnd() -> Bool {
-    guard grid.hasWinner() else {
-      if grid.isFull {
+    guard game.hasWinner() else {
+      if game.gridIsFull() {
         return true
       }
       return false
     }
     
-    updatePoints()
+    game.updatePoints()
     return true
-  }
-  
-  private func updatePoints() {
-    if grid.winner == .circle {
-      player1.addPoint()
-      circleTextField.updatePoints(player1.points)
-    } else {
-      player2.addPoint()
-      crossTextField.updatePoints(player2.points)
-    }
   }
   
   @IBAction func endGame() {
