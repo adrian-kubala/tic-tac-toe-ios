@@ -9,7 +9,7 @@
 import Foundation
 
 class Grid {
-  fileprivate var fields = [Field]()
+  private var fields = [Field]()
   var isFull: Bool {
     for field in fields {
       if field.symbol == nil {
@@ -53,7 +53,7 @@ class Grid {
     return false
   }
   
-  fileprivate func allFieldsAreClicked(_ fields: Field...) -> Bool {
+  private func allFieldsAreClicked(_ fields: Field...) -> Bool {
     let firstFieldToCheckSymbol = fields[0].symbol
     
     for field in fields {
@@ -71,7 +71,7 @@ class Grid {
     return true
   }
   
-  fileprivate func resetFields() {
+  private func resetFields() {
     for field in fields {
       field.reset()
     }

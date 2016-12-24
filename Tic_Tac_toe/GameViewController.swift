@@ -38,7 +38,7 @@ class GameViewController: UIViewController {
     }
   }
   
-  fileprivate func gameDidEnd() -> Bool {
+  private func gameDidEnd() -> Bool {
     guard grid.hasWinner() else {
       if grid.isFull {
         return true
@@ -50,7 +50,7 @@ class GameViewController: UIViewController {
     return true
   }
   
-  fileprivate func updatePoints() {
+  private func updatePoints() {
     if grid.winner == .circle {
       player1.addPoint()
       circleTextField.updatePoints(player1.points)
