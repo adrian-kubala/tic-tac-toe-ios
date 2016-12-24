@@ -24,6 +24,7 @@
 		3AE241021E0F33FD008064AA /* AIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE241011E0F33FD008064AA /* AIPlayer.swift */; };
 		3AE241061E0F394C008064AA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE241051E0F394C008064AA /* Game.swift */; };
 		3AE241081E0F398E008064AA /* TicTacToeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE241071E0F398E008064AA /* TicTacToeGame.swift */; };
+		3AE2410A1E0F413F008064AA /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE241091E0F413F008064AA /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		3AE241011E0F33FD008064AA /* AIPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIPlayer.swift; sourceTree = "<group>"; };
 		3AE241051E0F394C008064AA /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3AE241071E0F398E008064AA /* TicTacToeGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeGame.swift; sourceTree = "<group>"; };
+		3AE241091E0F413F008064AA /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				3A01D2301DFB47DF0010740F /* FieldView.swift */,
 				3A1485961DFDC859004A0897 /* GridView.swift */,
+				3AE241091E0F413F008064AA /* GameView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				3ACB6E3C1DE0E4F1005FB30F /* GameViewController.swift in Sources */,
 				3A01D2261DFB411A0010740F /* Field.swift in Sources */,
 				3AE241061E0F394C008064AA /* Game.swift in Sources */,
+				3AE2410A1E0F413F008064AA /* GameView.swift in Sources */,
 				3A1485971DFDC859004A0897 /* GridView.swift in Sources */,
 				3AE241021E0F33FD008064AA /* AIPlayer.swift in Sources */,
 				3AE241081E0F398E008064AA /* TicTacToeGame.swift in Sources */,

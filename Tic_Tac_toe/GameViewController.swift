@@ -9,14 +9,13 @@
 import UIKit
 
 class GameViewController: UIViewController {
-  @IBOutlet weak var circleTextField: UITextField!
-  @IBOutlet weak var crossTextField: UITextField!
-  @IBOutlet weak var gridView: GridView!
+  
+  @IBOutlet var gameView: GameView!
   
   let game = Game()
   
   override func viewDidLoad() {
-    gridView.setupGrid()
+    gameView.setupGridView()
   }
   
   @IBAction func makeMove(_ sender: FieldView) {
@@ -30,7 +29,7 @@ class GameViewController: UIViewController {
     game.swapTurn()
     
     if gameDidEnd() {
-      gridView.reset()
+      gameView.resetGridView()
     }
   }
   
