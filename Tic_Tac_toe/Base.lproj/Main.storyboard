@@ -119,6 +119,9 @@
                                 <state key="normal" title="End the game">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="endGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9h-Fi-HL6"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ex-sign" translatesAutoresizingMaskIntoConstraints="NO" id="bcv-Wa-Wby">
                                 <rect key="frame" x="55" y="104" width="45" height="44"/>

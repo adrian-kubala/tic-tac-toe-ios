@@ -59,4 +59,8 @@ class GameViewController: UIViewController {
       crossTextField.updatePoints(player2.points)
     }
   }
+  
+  @IBAction func endGame() {
+    dismiss(animated: true, completion: nil)
+  }
 }
