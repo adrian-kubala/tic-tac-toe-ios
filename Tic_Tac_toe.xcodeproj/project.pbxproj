@@ -132,15 +132,23 @@
 				3A01D2321DFB49230010740F /* View */,
 				3A0368731DE8753100FADF33 /* ViewController */,
 				3A3E9AB91DFCE46B00E445E8 /* Enums */,
+				3AE2410B1E0F4844008064AA /* Protocols */,
 				3A3E9AB61DFCDC0500E445E8 /* Extensions */,
 				3ACB6E391DE0E4F1005FB30F /* AppDelegate.swift */,
 				3ACB6E3D1DE0E4F1005FB30F /* Main.storyboard */,
 				3ACB6E401DE0E4F1005FB30F /* Assets.xcassets */,
 				3ACB6E421DE0E4F1005FB30F /* LaunchScreen.storyboard */,
 				3ACB6E451DE0E4F1005FB30F /* Info.plist */,
-				3AE241071E0F398E008064AA /* TicTacToeGame.swift */,
 			);
 			path = Tic_Tac_toe;
+			sourceTree = "<group>";
+		};
+		3AE2410B1E0F4844008064AA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3AE241071E0F398E008064AA /* TicTacToeGame.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

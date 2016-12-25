@@ -24,9 +24,9 @@ class GameView: UIView {
   
   func updatePlayerPoints(player: Player) {
     if player.symbol == .circle {
-      circleTextField.text = String(player.points) + " points"
+      circleTextField.updatePoints(player.points)
     } else {
-      crossTextField.text = String(player.points) + " points"
+      crossTextField.updatePoints(player.points)
     }
   }
 }

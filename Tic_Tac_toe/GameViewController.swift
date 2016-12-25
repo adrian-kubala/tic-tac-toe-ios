@@ -9,7 +9,6 @@
 import UIKit
 
 class GameViewController: UIViewController {
-  
   @IBOutlet var gameView: GameView!
   
   let game = Game()
