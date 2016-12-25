@@ -13,6 +13,8 @@ class GameViewController: UIViewController {
   
   var game: Game!
   
+  var timer: Timer?
+  
   override func viewDidLoad() {
     gameView.setupGridView()
   }
@@ -40,7 +42,11 @@ class GameViewController: UIViewController {
           break
         }
       }
-      makeMove(gameView.gridView[fieldIndex])
+      
+      timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { [weak self] (timer) in
+        self?.makeMove((self?.gameView.gridView[fieldIndex])!)
+        print("timer")
+      }
     }
   }
   
