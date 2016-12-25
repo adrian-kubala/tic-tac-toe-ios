@@ -42,6 +42,7 @@ class GameViewController: UIViewController {
     }
     
     game.updatePoints()
+    gameView.updatePlayerPoints(player: game.winner!)
     return true
   }
   

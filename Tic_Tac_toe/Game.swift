@@ -15,6 +15,18 @@ class Game: TicTacToeGame {
   let grid = Grid()
   var turn = Symbol.circle
   
+  var winner: Player? {
+    if let winner = grid.winner {
+      if winner == .circle {
+        return player1
+      } else {
+        return player2
+      }
+    }
+    
+    return nil
+  }
+  
   func swapTurn() {
     turn.swap()
   }

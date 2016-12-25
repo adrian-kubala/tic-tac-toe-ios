@@ -21,4 +21,12 @@ class GameView: UIView {
   func resetGridView() {
     gridView.reset()
   }
+  
+  func updatePlayerPoints(player: Player) {
+    if player.symbol == .circle {
+      circleTextField.text = String(player.points) + " points"
+    } else {
+      crossTextField.text = String(player.points) + " points"
+    }
+  }
 }
