@@ -11,7 +11,7 @@ import UIKit
 class GameViewController: UIViewController {
   @IBOutlet var gameView: GameView!
   
-  let game = Game()
+  var game: Game!
   
   override func viewDidLoad() {
     gameView.setupGridView()

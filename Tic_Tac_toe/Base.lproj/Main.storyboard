@@ -43,7 +43,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="vgg-Jo-KJe"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="showGameViewController" id="4zs-EV-E2t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk3-VQ-xZx">
@@ -71,6 +71,9 @@
                             <constraint firstItem="wZI-GZ-ssW" firstAttribute="top" secondItem="oeB-PD-SeL" secondAttribute="bottom" constant="52" id="ugD-60-ZDX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="onePlayerSwitch" destination="gfr-7W-OKG" id="t7f-3h-M4M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAX-mP-kXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

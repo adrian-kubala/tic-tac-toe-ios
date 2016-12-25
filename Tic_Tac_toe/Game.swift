@@ -9,11 +9,21 @@
 import Foundation
 
 class Game: TicTacToeGame {
-  let player1 = Player(with: Symbol.circle)
-  let player2 = Player(with: Symbol.cross)
+  let player1 = Player(with: .circle)
+  let player2: Player!
   
   let grid = Grid()
   var turn = Symbol.circle
+  
+  var onePlayer: Bool?
+  
+  init(_ onePlayer: Bool) {
+    if onePlayer {
+      player2 = AIPlayer(with: .cross)
+    } else {
+      player2 = Player(with: .cross)
+    }
+  }
   
   var winner: Player? {
     if let winner = grid.winner {

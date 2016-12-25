@@ -10,7 +10,7 @@ import Foundation
 
 protocol TicTacToeGame {
   var player1: Player { get }
-  var player2: Player { get }
+  var player2: Player! { get }
   
   var grid: Grid { get }
   var turn: Symbol { get set }
