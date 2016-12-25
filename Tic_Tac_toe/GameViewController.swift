@@ -30,6 +30,18 @@ class GameViewController: UIViewController {
     if gameDidEnd() {
       gameView.resetGridView()
     }
+    
+    if game.turn == .cross && game.player2 is AIPlayer {
+      let aiPlayer = game.player2 as! AIPlayer
+      var fieldIndex: Int!
+      while true {
+        fieldIndex = aiPlayer.makeRandomMove()
+        if game.grid[fieldIndex].symbol == nil {
+          break
+        }
+      }
+      makeMove(gameView.gridView[fieldIndex])
+    }
   }
   
   private func gameDidEnd() -> Bool {
