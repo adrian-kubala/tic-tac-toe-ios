@@ -9,7 +9,17 @@
 import UIKit
 
 class MainMenuViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  @IBOutlet weak var onePlayerSwitch: UISwitch!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let identifier = segue.identifier, identifier == "showGameViewController" {
+      let destinationVC = segue.destination as! GameViewController
+      present(destinationVC, animated: true, completion: nil)
+      destinationVC.game = Game(onePlayerSwitch.isOn)
     }
+  }
 }

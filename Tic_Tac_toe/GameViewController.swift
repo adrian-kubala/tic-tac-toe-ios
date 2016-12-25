@@ -9,17 +9,14 @@
 import UIKit
 
 class GameViewController: UIViewController {
-  @IBOutlet weak var circleTextField: UITextField!
-  @IBOutlet weak var crossTextField: UITextField!
-  @IBOutlet weak var gridView: GridView!
+  @IBOutlet var gameView: GameView!
   
-  let grid = Grid()
-  var player1 = Player(with: Symbol.circle)
-  var player2 = Player(with: Symbol.cross)
-  var turn = Symbol.circle
+  var game: Game!
+  
+  var timer: Timer?
   
   override func viewDidLoad() {
-    gridView.setupGrid()
+    gameView.setupGridView()
   }
   
   @IBAction func makeMove(_ sender: FieldView) {
@@ -27,37 +24,44 @@ class GameViewController: UIViewController {
       return
     }
     
-    sender.update(with: turn)
-    turn.swap()
+    sender.update(with: game.turn)
     
-    let fieldViewIndex = sender.index
-    grid[fieldViewIndex].symbol = sender.symbol
+    game.updateGridWith(symbol: sender.symbol!, at: sender.index)
+    game.swapTurn()
     
     if gameDidEnd() {
-      gridView.reset()
+      gameView.resetGridView()
+    }
+    
+    if game.turn == .cross && game.player2 is AIPlayer {
+      let aiPlayer = game.player2 as! AIPlayer
+      var fieldIndex: Int!
+      while true {
+        fieldIndex = aiPlayer.makeRandomMove()
+        if game.grid[fieldIndex].symbol == nil {
+          break
+        }
+      }
+      
+      let timeInterval = TimeInterval(arc4random_uniform(3) + 1)
+      timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: false) { [weak self] (timer) in
+        self?.makeMove((self?.gameView.gridView[fieldIndex])!)
+        print(timeInterval)
+      }
     }
   }
   
   private func gameDidEnd() -> Bool {
-    guard grid.hasWinner() else {
-      if grid.isFull {
+    guard game.hasWinner() else {
+      if game.gridIsFull() {
         return true
       }
       return false
     }
     
-    updatePoints()
+    game.updatePoints()
+    gameView.updatePlayerPoints(player: game.winner!)
     return true
-  }
-  
-  private func updatePoints() {
-    if grid.winner == .circle {
-      player1.addPoint()
-      circleTextField.updatePoints(player1.points)
-    } else {
-      player2.addPoint()
-      crossTextField.updatePoints(player2.points)
-    }
   }
   
   @IBAction func endGame() {

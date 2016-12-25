@@ -43,7 +43,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="vgg-Jo-KJe"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="showGameViewController" id="4zs-EV-E2t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk3-VQ-xZx">
@@ -71,6 +71,9 @@
                             <constraint firstItem="wZI-GZ-ssW" firstAttribute="top" secondItem="oeB-PD-SeL" secondAttribute="bottom" constant="52" id="ugD-60-ZDX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="onePlayerSwitch" destination="gfr-7W-OKG" id="t7f-3h-M4M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAX-mP-kXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,7 +87,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GameView" customModule="Tic_Tac_toe" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -320,11 +323,14 @@
                             <constraint firstItem="p8X-W6-MUd" firstAttribute="top" secondItem="bcv-Wa-Wby" secondAttribute="bottom" constant="53" id="wBF-Dd-JCv"/>
                             <constraint firstItem="oWP-rI-DGz" firstAttribute="top" secondItem="p8X-W6-MUd" secondAttribute="bottom" constant="42" id="zsT-Lu-C6m"/>
                         </constraints>
+                        <connections>
+                            <outlet property="circleTextField" destination="Auq-W1-eqK" id="rDv-Gd-mQX"/>
+                            <outlet property="crossTextField" destination="Bd7-ea-z0f" id="u4L-b4-SvO"/>
+                            <outlet property="gridView" destination="p8X-W6-MUd" id="OwR-GH-OLe"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="circleTextField" destination="Auq-W1-eqK" id="fay-Bn-D6n"/>
-                        <outlet property="crossTextField" destination="Bd7-ea-z0f" id="MDw-nr-Q9b"/>
-                        <outlet property="gridView" destination="p8X-W6-MUd" id="Dl8-pQ-cHt"/>
+                        <outlet property="gameView" destination="8bC-Xf-vdC" id="6EZ-m0-mIl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

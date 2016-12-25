@@ -37,23 +37,23 @@ class Grid {
   }
   
   func hasWinner() -> Bool {
-    if allFieldsAreClicked(fields[0], fields[1], fields[2])
-    || allFieldsAreClicked(fields[3], fields[4], fields[5])
-    || allFieldsAreClicked(fields[6], fields[7], fields[8])
+    if threeFieldsAreClicked(fields[0], fields[1], fields[2])
+    || threeFieldsAreClicked(fields[3], fields[4], fields[5])
+    || threeFieldsAreClicked(fields[6], fields[7], fields[8])
       
-    || allFieldsAreClicked(fields[0], fields[3], fields[6])
-    || allFieldsAreClicked(fields[1], fields[4], fields[7])
-    || allFieldsAreClicked(fields[2], fields[5], fields[8])
+    || threeFieldsAreClicked(fields[0], fields[3], fields[6])
+    || threeFieldsAreClicked(fields[1], fields[4], fields[7])
+    || threeFieldsAreClicked(fields[2], fields[5], fields[8])
     
-    || allFieldsAreClicked(fields[0], fields[4], fields[8])
-    || allFieldsAreClicked(fields[2], fields[4], fields[6]) {
+    || threeFieldsAreClicked(fields[0], fields[4], fields[8])
+    || threeFieldsAreClicked(fields[2], fields[4], fields[6]) {
       return true
     }
     
     return false
   }
   
-  private func allFieldsAreClicked(_ fields: Field...) -> Bool {
+  private func threeFieldsAreClicked(_ fields: Field...) -> Bool {
     let firstFieldToCheckSymbol = fields[0].symbol
     
     for field in fields {

@@ -9,7 +9,7 @@
 import Foundation
 
 class Player {
-  private let symbol: Symbol
+  let symbol: Symbol
   var points = 0
   
   init(with symbol: Symbol) {
