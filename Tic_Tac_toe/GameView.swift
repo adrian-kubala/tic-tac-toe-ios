@@ -9,9 +9,9 @@
 import UIKit
 
 class GameView: UIView {
-  @IBOutlet weak var circleTextField: UITextField!
-  @IBOutlet weak var crossTextField: UITextField!
-  @IBOutlet weak var gridView: GridView!
+  @IBOutlet var circleTextField: UITextField!
+  @IBOutlet var crossTextField: UITextField!
+  @IBOutlet var gridView: GridView!
 
   
   func setupGridView() {
