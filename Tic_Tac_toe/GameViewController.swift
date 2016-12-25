@@ -43,9 +43,10 @@ class GameViewController: UIViewController {
         }
       }
       
-      timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { [weak self] (timer) in
+      let timeInterval = TimeInterval(arc4random_uniform(3) + 1)
+      timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: false) { [weak self] (timer) in
         self?.makeMove((self?.gameView.gridView[fieldIndex])!)
-        print("timer")
+        print(timeInterval)
       }
     }
   }
